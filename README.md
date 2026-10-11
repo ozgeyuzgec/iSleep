@@ -14,7 +14,7 @@ The repository is organized into six folders corresponding to the main figures o
 
 - **`fig1_a_visualization.m`** — MATLAB script for visualizing binocular pupil measurements and synchronized polysomnographic signals across sleep stages, including sleep-stage annotations and arousal events.
 - **`fig1_example_rec.m`** — MATLAB script for plotting pupil diameter, eye position, EEG, EOG, EMG, ECG and breathing signals from an example recording.
-- **Supporting `.mat` files** — Data from one complete recording session, including pupil-tracking and physiological measurements, sleep-stage annotations and arousal information, used to generate the example plots.
+- **Supporting `.mat` files** — Data from one complete recording session, including pupil-tracking and physiological measurements, sleep-stage annotations and arousal information, used to generate the example plots. clean_signals_with_Ar is available on [Zenodo](https://doi.org/10.5281/zenodo.23299126).
 
 ### Figure 2 — Pupil dynamics and physiological activity during sleep
 
