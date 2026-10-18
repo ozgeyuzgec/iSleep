@@ -26,7 +26,14 @@ The repository is organized into six folders corresponding to the main figures o
 
 - **`fig3_FeatureExtraction_example.m`** — Simplified MATLAB script illustrating epoch selection, binocular pupil feature extraction and preparation of data for sleep-stage classification.
 - **`fig3_ML.ipynb`** — Python notebook for machine-learning classification of sleep stages, cross-validation and performance evaluation.
-
+- **`fig3b_tsne.csv`** — t-SNE coordinates and corresponding sleep-stage labels for Figure 3b.
+- **`plot_fig3b.m`** — MATLAB script for visualizing the t-SNE results in Figure 3b.
+- **`fig3d_confusion_counts.csv`** — Confusion matrix data for Figure 3d.
+- **`plot_fig3d.py`** — Python script for plotting the confusion matrix in Figure 3d.
+- **`general_model_scores.csv`** — Classification performance scores for the generalized models.
+- **`session_scores.csv`** — Session-level classification performance scores.
+- **`plot_extended_data_fig3.m`** — MATLAB script for visualizing classification performance comparisons in Extended Data Figure 3.
+  
 The feature-extraction example illustrates selected processing steps rather than the complete feature set used in the study.
 
 ### Figure 4 — Pupil modulation and responses to light stimulation during sleep
