@@ -1,0 +1,18 @@
+	visit number 																									
+pup003	8	Non	Moins	Moins	0	Sleepy	Très bien	Très bien	NA																	
+pup004	8	Oui	Moins	Moins	60	relaxed	Bien	Bien	NA																	
+pup010	7	Oui	Moins	Moins	45	calm	Acceptable	Acceptable	NA																	
+pup011	8	Non	Pareil	Pareil	40	sleepy	Bien	Bien	NA																	
+pup020	8	Oui	Plus	Plus	150	peu eveille	Bien	Acceptable	NA																	
+pup023	8	Oui	Pareil	Pareil	100	calme	Bien	Bien	NA																	
+pup024	8	Oui	Pareil	Moins	90	meditation	Bien	Bien	NA																	
+pup030	8	Oui	Moins	Moins	70	relaxes	Acceptable	Bien	NA																	
+pup032	8	Oui	Moins	Moins	120		Très bien	Bien	NA																	
+pup035	8	Oui	Pareil	Moins	100	tired	Acceptable	Acceptable	NA																	
+pup039	8	Oui	Moins	Moins	120	tipsy	Acceptable	Très bien	NA																	
+pup044	4	Oui	Moins	Moins	45	somnolente	Bien	Excellent	NA																	
+pup050	8	Oui	Moins	Moins	90	sleepy	Excellent	Excellent	NA																	
+pup060	8	Non	Plus	Pareil	60	somnolent	Bien	Acceptable	NA																	
+pup022	8	Oui	Pareil	Plus	45	good	Acceptable	Bien	NA																	
+pup049	5	Oui	Pareil	Pareil	45	good	Bien	Bien	NA																	
+pup065	8	Oui	Pareil	Moins	60	RELAX	Acceptable	Acceptable	NA																	

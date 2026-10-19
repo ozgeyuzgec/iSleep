@@ -1,0 +1,17 @@
+pup003	Oui	Pareil	Moins	120	Somnolent avec besoin de me reposer	Très bien	Bien	NA																	
+pup004	Oui	Moins	Moins	80	relaxé	Très bien	Très bien	NA																	
+pup010	Oui	Moins	Moins	120	calme	Acceptable	Bien	NA																	
+pup011	Oui	Pareil	Pareil	60	bon	Bien	Acceptable	NA																	
+pup020	Oui	Moins	Moins	120	a bit tired	Bien	Bien	NA																	
+pup022	Oui	Moins	Moins	60	peu fatigue	Très bien	Très bien	NA																	
+pup023	Oui	Pareil	Pareil	80	bien	Bien	Acceptable	NA																	
+pup024	Non	Pareil	Moins	120	meditation	Bien	Bien	NA																	
+pup030	Non	Pareil	Pareil	50	relaxed	Acceptable	Acceptable	NA																	
+pup032	Oui	Moins	Moins	60	tired	Très bien	Très bien	NA																	
+pup035	Oui	Pareil	Pareil	50	a l'aise	Excellent	Excellent	NA																	
+pup039	NA	Pareil	Moins	45	curious	Très bien	Très bien	NA																	
+pup044	Oui	Moins	Pareil	30	Somnolent	Bien	Bien	NA																	
+pup049 	Oui	Pareil	Moins	90	bien	Bien	Bien	NA																	
+pup050 	Oui	Pareil	Moins	70	a bit sleepy	Très bien	Très bien	NA																	
+pup060 	Non	Plus	Pareil	60	"calme, apaisée"	Acceptable	Acceptable	"je me suis souvent réveillée à cause des yeux, la sensation n'est pas très agréable et provoque un réveil par moment"																	
+pup065 	Oui	Plus	Moins	60	a bit tired	Acceptable	Acceptable	NA																	

@@ -1,0 +1,17 @@
+pup003	Oui	Pareil	Moins	60	At peace	Très bien	Très bien	NA																	
+pup004	Oui	Moins	Moins	100	relaxee	Excellent	Excellent	NA																	
+pup010	Oui	Pareil	Moins	100	sleepy	Bien	Bien	NA																	
+pup011	Oui	Pareil	Pareil	30	bon	Bien	Bien	NA																	
+pup020	Oui	Moins	Moins	110	moyennement fatiguer	Excellent	Très bien	NA																	
+pup022	Oui	Pareil	Pareil	70	"curieux, bien"	Très bien	Très bien	NA																	
+pup023	Oui	Pareil	Pareil	90	relaxee/somnolance	Très bien	Très bien	NA																	
+pup024 	Non	Plus	Moins	40	derangee	Très bien	Très bien	NA																	
+pup030	Oui	Moins	Moins	60	normal	Très bien	Bien	NA																	
+pup032	Oui	Moins	Moins	120		Excellent	Excellent	NA																	
+pup035	Oui	Pareil	Plus	90	a bit tired	Bien	Bien	NA																	
+pup039	Oui	Pareil	Moins	100	euphoria	Excellent	Très bien	NA																	
+pup044	Oui	Pareil	Moins	45	Somnolente	Excellent	Très bien	NA																	
+pup049	Oui	Pareil	Moins	60	bien	Très bien	Très bien	NA																	
+pup050	Oui	Pareil	Moins	70	faitguee	Excellent	Très bien	"phone in bed, cap too tight on throat"																	
+pup060	Oui	Plus	Plus	50	"plus stressée que d'habitude, a mis plus de temps à s'endormir, et peur de ne pas réussir à dormir"	Très bien	Bien	NA																	
+pup065	Oui	Moins	Moins	200	curieux du déroulement	Très bien	Très bien	NA																	
