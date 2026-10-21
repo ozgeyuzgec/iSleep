@@ -3,7 +3,7 @@
 clear; 
 % close all; clc;
 
-base_dir = '\\nasac-m2.unige.ch\m-huberlab\GHuber\users\Ozge\Data sets\Surgery rec';
+base_dir = '***';
 
 use_sessions = {
     'patient07'
@@ -789,7 +789,7 @@ end
 clearvars -except P_sess H_sess labels muP_grp sdP_grp muH_grp sdH_grp p_within
 clc
 
-base_dir = '\\nasac-m2.unige.ch\m-huberlab\GHuber\users\Ozge\Data sets\Surgery rec';
+base_dir = '***';
 
 sessions = {'patient07','patient09','patient20', ...
             'patient08','patient19','patient18'};
@@ -854,7 +854,7 @@ Metrics.p_within = p_within;
 % 3. SAVE
 % ------------------------------------------------------------
 
-out_file = fullfile('C:\Users\huberlab\Desktop\NBME submission\code\fig6','Fig6_source_data.mat');
+out_file = fullfile('***');
 
 save(out_file,'Segments','Metrics');
 
