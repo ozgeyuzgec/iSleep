@@ -1,5 +1,4 @@
 %% DRUG vs CONTROL
-% MATLAB R2021b compatible
 % Each diamond = one sleep session
 
 clear; close all; clc;
@@ -12,17 +11,9 @@ tiledlayout(1,3,'Padding','compact','TileSpacing','compact');
 % DAPI
 % =============================================================
 
-fileLoc = '\\nasac-m2.unige.ch\m-huberlab\GHuber\users\Ozge\Data sets\DRUG recordings\dapi\';
+fileLoc = '***';
 
-sessionsD = { ...
-    'pup024_dapiR_1', ...
-    'pup024_dapiL_1', ...
-    'pup042_dapiL_1', ...
-    'pup042_dapiR_1', ...
-    'pup042_dapiR_2', ...
-    'pup049_dapiR_1', ...
-    'pup065_dapiR_1', ...
-    'pup077_dapiR_1'};
+sessionsD = { '***'};
 
 sd_time_mean = NaN(numel(sessionsD),2);
 sd_time_std  = NaN(numel(sessionsD),2);
@@ -116,7 +107,6 @@ for is = 1:numel(sessionsD)
 
 end
 
-
 xlim([0.5 2.5]);
 ylim([0 13]);
 
@@ -150,34 +140,23 @@ tcritD = [tinv(0.975,dfD(1)), ...
 ciHW_D = tcritD .* seD;
 
 
-
 %% ============================================================
 % TROP
 % =============================================================
 
-fileLoc = '\\nasac-m2.unige.ch\m-huberlab\GHuber\users\Ozge\Data sets\DRUG recordings\trop\';
+fileLoc = '***';
 
-sessionsT = { ...
-    'pup024_tropR_1', ...
-    'pup049_tropL_1', ...
-    'pup049_tropL_2', ...
-    'pup049_tropR_1', ...
-    'pup050_tropL_1', ...
-    'pup050_tropR_1', ...
-    'pup050_tropR_2', ...
-    'pup065_tropR_1'};
+sessionsT = { '***'};
 
 st_time_mean = NaN(numel(sessionsT),2);
 st_time_std  = NaN(numel(sessionsT),2);
 stc          = NaN(numel(sessionsT),1);
-
 
 nexttile(2);
 hold on;
 
 title('trop vs. control');
 ylabel('Pupil diameter (px)');
-
 
 for is = 1:numel(sessionsT)
 
@@ -196,16 +175,13 @@ for is = 1:numel(sessionsT)
     load([fileLoc session '\eyes_sync.mat']);
     load([fileLoc session '\rr.mat']);
 
-
     % Normalize
     diam_eye1 = diam_eye1 ./ r;
     diam_eye0 = diam_eye0 ./ l;
 
-
     % Match missing values between eyes
     diam_eye0(isnan(diam_eye1)) = NaN;
     diam_eye1(isnan(diam_eye0)) = NaN;
-
 
     % Determine drug eye from session name
     side = extractAfter(session,'trop');
@@ -229,14 +205,12 @@ for is = 1:numel(sessionsT)
     st_time_mean(is,:) = [m_d m_c];
     st_time_std(is,:)  = [s_d s_c];
 
-
     % Plot each session
     plot(1,m_d,'db');
     plot(2,m_c,'dk');
 
     % Drug/control are paired within the same session
     plot([1 2],[m_d m_c],'k-');
-
 
     % Pearson correlation between eyes
     validCorr = ~isnan(drugdiam) & ~isnan(cntdiam);
@@ -305,8 +279,6 @@ title('Inter-eye correlation');
 ylabel('Pearson r');
 
 xlim([0.5 2.5]);
-
-% Important: wide enough to display ALL session correlations
 ylim([0.2 1]);
 
 xticks([1 2]);
@@ -323,7 +295,6 @@ nTcorr = numel(rT);
 
 
 %% Plot ALL individual session correlations
-% No connecting lines because DAPI and TROP sessions are not paired
 
 for is = 1:numel(rD)
     plot(1,rD(is),'dm');
@@ -340,7 +311,6 @@ end
 % Fisher-z transform + Welch ttest2
 % =============================================================
 
-% Avoid exactly +/-1 before atanh
 rD_safe = rD;
 rT_safe = rT;
 
@@ -350,11 +320,9 @@ rD_safe(rD_safe <= -1) = -0.999999;
 rT_safe(rT_safe >= 1)  = 0.999999;
 rT_safe(rT_safe <= -1) = -0.999999;
 
-
 % Fisher-z transformation
 zD = atanh(rD_safe);
 zT = atanh(rT_safe);
-
 
 % Independent Welch t-test
 [~,ps,~,stats_corr] = ...
@@ -461,7 +429,6 @@ fprintf(['DAPI vs TROP: Welch t-test on Fisher-z r: ' ...
 
 %% ============================================================
 % SOURCE DATA FOR PUBLISHER
-% Nothing is saved -- tables are created in workspace
 % =============================================================
 
 DAPI_source = table( ...
