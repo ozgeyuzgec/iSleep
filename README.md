@@ -8,18 +8,22 @@ The repository contains analysis code and supporting data associated with the re
 
 ## Repository contents
 
-The repository is organized into six folders corresponding to the main figures of the manuscript. Each folder contains analysis scripts and, where available, supporting data. Code and data related to Extended Data figures are included in the corresponding main figure folders.
+The repository is organized into six folders corresponding to the main figures of the manuscript. Each folder contains analysis scripts and, where available, supporting data. Code and data related to Extended Data figures are included in the corresponding main figure folders. Additional larger processed datasets are available separately on Zenodo.
 
 ### Figure 1 — iSleep system and example sleep recording
 
 - **`fig1_a_visualization.m`** — MATLAB script for visualizing binocular pupil measurements and synchronized polysomnographic signals across sleep stages, including sleep-stage annotations and arousal events.
 - **`fig1_example_rec.m`** — MATLAB script for plotting pupil diameter, eye position, EEG, EOG, EMG, ECG and breathing signals from an example recording.
+- **Extended_Fig1c_sleep_architecture.m** — MATLAB script for analyzing and visualizing sleep architecture in Extended Data Figure 1c.
+- **Extended_Fig1d_questionnaire.m** — MATLAB script for analyzing questionnaire results presented in Extended Data Figure 1d.
+- **Questionnaire .txt files** — Supporting questionnaire data (PrePostQts_finalses_post.txt, PrePostQts_ses1_post.txt, PrePostQts_ses3_post.txt) for the Extended Data analysis.
 - **Supporting `.mat` files** — Data from one complete recording session, including pupil-tracking and physiological measurements, sleep-stage annotations and arousal information, used to generate the example plots. clean_signals_with_Ar is available on [Zenodo](https://doi.org/10.5281/zenodo.23299126).
 
 ### Figure 2 — Pupil dynamics and physiological activity during sleep
 
 - **`fig2_computations.m`** — Computation of pupil–EEG and autonomic correlations, infraslow oscillations and event-related responses across sleep stages.
 - **`fig2_plots.m`** — Visualization and statistical analysis of the computed results.
+- **Supporting MATLAB functions** — Additional functions for signal processing, time-frequency analysis, cluster-based permutation testing and visualization.
 - **`ISO.mat`** — Processed data containing correlation and spectral measurements across recording sessions and sleep stages. Available on [Zenodo](https://doi.org/10.5281/zenodo.23299126).
 
 ### Figure 3 — Pupil-based sleep-stage classification
@@ -41,6 +45,8 @@ The feature-extraction example illustrates selected processing steps rather than
 - **`fig4_pharmacology.m`** — MATLAB script for analyzing pupil diameter and inter-eye correlations following pharmacological pupil modulation.
 - **`fig4_pharm_source_data.mat`** — Processed source data for the pharmacological comparisons.
 - **`fig4_ERP_plotting.m`** — MATLAB script for analyzing light-evoked EEG responses, including event-related potentials (ERPs), time-frequency power and inter-trial phase coherence (ITPC) across sleep stages.
+- **fig4_example_trace.m** — MATLAB script for plotting pupil traces and stimulation triggers to reproduce the example stimulation responses presented in Figure 4.
+- **Supporting .mat files** — Example pupil traces, synchronized time information and stimulation trigger indices for the drug-treated and control conditions (c1T_syn.mat, c2T_syn.mat, cnt_eye_source.mat, drug_eye_source.mat, eeg_time_syn.mat).
 - **`results_erps.mat`** — Processed EEG analysis data containing event-related responses, time-frequency power and phase-coherence measurements for the tropicamide-treated and control conditions across sleep stages. Available on [Zenodo](https://doi.org/10.5281/zenodo.23299126).
 
 ### Figure 5 — Binocular eye positions during sleep
